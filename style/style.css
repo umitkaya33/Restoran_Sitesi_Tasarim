@@ -53,6 +53,12 @@ a {
     text-decoration: none;
 }
 
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
 .btn {
     margin-top: 1rem;
     display: inline-block;
@@ -157,12 +163,6 @@ a {
 /* ! home end */
 
 /* ! menu start */
-.menu .box-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 1.5rem;
-}
-
 .menu .box-container .box {
     padding: 3rem;
     background-color: #fff;
@@ -203,12 +203,6 @@ a {
 /* ! menu end */
 
 /* ! products start */
-.products .box-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 1.5rem;
-}
-
 .products .box-container .box {
     text-align: center;
     background-color: #fff;
@@ -339,3 +333,38 @@ a {
 }
 
 /* ! about end */
+
+/* ! review start */
+.review .box-container .box {
+    border: var(--border);
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #fff;
+    border-radius: 3rem;
+}
+
+.review .box-container .box p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    padding: 2rem 0;
+}
+
+.review .box-container .box .user {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review .box-container .box h3 {
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.review .box-container .box .stars i {
+    font-size: 1.5rem;
+    color: gold;
+}
+
+/* ! review end */
