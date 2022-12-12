@@ -325,11 +325,13 @@ a {
 .about .row .content {
     flex: 1 1 45rem;
 }
-.about .row .content h3{
+
+.about .row .content h3 {
     font-size: 3rem;
     color: #fff;
 }
-.about .row .content p{
+
+.about .row .content p {
     font-size: 1.6rem;
     color: #ccc;
     padding: 1rem 0;
